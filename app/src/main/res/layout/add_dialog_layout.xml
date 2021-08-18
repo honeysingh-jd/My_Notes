@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnTakePhoto"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/convergence"
+        android:text="Take photo"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:icon="@drawable/camera"
+        app:iconPadding="40dp"
+        app:iconTint="@color/black"
+        android:foreground="?attr/selectableItemBackground"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAddImage"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/convergence"
+        android:text="Add image"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:icon="@drawable/image"
+        app:iconPadding="40dp"
+        app:iconTint="@color/black"
+        android:foreground="?attr/selectableItemBackground"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnBackground"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/convergence"
+        android:text="Change background"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:icon="@drawable/style_1"
+        app:iconPadding="40dp"
+        app:iconTint="@color/black"
+        android:foreground="?attr/selectableItemBackground"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRecord"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/convergence"
+        android:text="Recording"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:icon="@drawable/mic"
+        app:iconPadding="40dp"
+        app:iconTint="@color/black"
+        android:foreground="?attr/selectableItemBackground"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCheckbox"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/convergence"
+        android:text="Checkboxes"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:icon="@drawable/check_box"
+        app:iconPadding="40dp"
+        app:iconTint="@color/black"
+        android:foreground="?attr/selectableItemBackground"/>
+
+</LinearLayout>

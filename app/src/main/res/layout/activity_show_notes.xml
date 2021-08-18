@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowNotesActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCancelAlarm"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:text="Alarm On"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat."
+                android:textColor="#5E8B7E"
+                android:textSize="12sp"
+                app:backgroundTint="#FDF6F0"
+                app:cornerRadius="30dp"
+                app:icon="@drawable/alarm_on"
+                app:iconPadding="10dp"
+                app:iconSize="20dp"
+                app:iconTint="#FFC947" />
+
+            <EditText
+                android:id="@+id/etHeading1"
+                style="@android:style/Widget.Material.Light.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:background="@drawable/edittexts"
+                android:fontFamily="@font/convergence"
+                android:hint="Title"
+                android:inputType="textPersonName"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColorHint="#A2B29F"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnCancelAlarm" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvTodoList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="8dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAddItem"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:fontFamily="@font/convergence"
+                android:paddingLeft="50dp"
+                android:text="list item"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="#AAAAAA"
+                app:icon="@drawable/plus"
+                app:iconPadding="30dp"
+                app:iconTint="#AAAAAA" />
+
+            <EditText
+                android:id="@+id/etNotes1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="200dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/edittexts"
+                android:padding="10dp"
+                android:ems="10"
+                android:fontFamily="@font/convergence"
+                android:gravity="start|top"
+                android:hint="Note"
+                android:inputType="textMultiLine"
+                android:textColorHint="#A2B29F"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etHeading1" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/tvEditTime1"
+        android:layout_width="match_parent"
+        android:layout_height="17dp"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="14dp"
+        android:fontFamily="@font/convergence"
+        android:gravity="center_horizontal"
+        android:text="TextView"
+        android:textColor="@color/black"
+        app:layout_constraintVertical_bias="0.988"/>
+
+    <ImageView
+        android:id="@+id/ivAdd1"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="9dp"
+        android:foreground="?attr/selectableItemBackground"
+        app:srcCompat="@drawable/check_box" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

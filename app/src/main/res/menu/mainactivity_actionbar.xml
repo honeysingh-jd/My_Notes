@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/searchNotes"
+        android:title="Search Notes"
+        app:showAsAction="always|collapseActionView"
+        android:icon="@drawable/search_icon"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        />
+
+    <item
+        android:id="@+id/changeLayout"
+        android:title="ChangeLayout"
+        app:showAsAction="always"
+        android:icon="@drawable/list_icon1"
+        />
+
+    <item
+        android:id="@+id/hiddenNotes"
+        android:title="Hidden Notes"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/settings"
+        android:title="Settings"
+        app:showAsAction="never" />
+</menu>

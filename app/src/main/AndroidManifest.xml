@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mynotes">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/my_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyNotes">
+        <activity android:name=".SettingsActivity"
+            android:theme="@style/Theme.MyNotes.NoActionBar">
+        </activity>
+        <activity android:name=".InputPassword2" />
+        <activity
+            android:name=".MainActivity1"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.MyNotes.NoActionBar"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".InputPassword"
+            android:theme="@style/Theme.MyNotes.NoActionBar" />
+        <activity
+            android:name=".CreatePassword"
+            android:theme="@style/Theme.MyNotes.NoActionBar" />
+        <activity
+            android:name=".ShowNotesActivity"
+            android:theme="@style/Theme.MyNotes.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".AddNotesActivity"
+            android:theme="@style/Theme.MyNotes.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.MyNotes.NoActionBar"
+            android:windowSoftInputMode="adjustNothing">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".AlertReceiver" />
+    </application>
+
+</manifest>
