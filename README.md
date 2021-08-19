@@ -13,3 +13,11 @@ The app can be used to save your daily notes and some todo tasks which can be ch
 You can create as many notes by clicking on a button which opens up a text editor where you can write a note and also a todo list. The contente of todo list can be checked
 , unchecked and cleared. You can hide a normal Note by clicking on the hide button and also unhide a hidden note in the same way.
 Important features of the app is that you can add a reminder to any of your saved note which will remind you by sending a notification at the provided time.
+
+## Screenshots
+
+<img src="screenshots/Screenshot1.jpg" width="300" height="600">     <img src="screenshots/Screenshot2.jpg" width="300" height="600">
+<img src="screenshots/Screenshot3.jpg" width="300" height="600">     <img src="screenshots/Screenshot4.jpg" width="300" height="600">
+<img src="screenshots/Screenshot5.jpg" width="300" height="600">     <img src="screenshots/Screenshot6.jpg" width="300" height="600">
+<img src="screenshots/Screenshot7.jpg" width="300" height="600">     <img src="screenshots/Screenshot8.jpg" width="300" height="600">
+<img src="screenshots/Screenshot9.jpg" width="300" height="600">     <img src="screenshots/Screenshot10.jpg" width="300" height="600">
